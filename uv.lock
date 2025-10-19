@@ -334,6 +334,11 @@ dependencies = [
     { name = "python-dotenv" },
 ]
 
+[package.dev-dependencies]
+dev = [
+    { name = "black" },
+]
+
 [package.metadata]
 requires-dist = [
     { name = "black", specifier = ">=25.9.0" },
@@ -342,6 +347,9 @@ requires-dist = [
     { name = "langchain-openai", specifier = ">=1.0.0" },
     { name = "python-dotenv", specifier = ">=1.1.1" },
 ]
+
+[package.metadata.requires-dev]
+dev = [{ name = "black", specifier = ">=25.9.0" }]
 
 [[package]]
 name = "langchain-openai"
